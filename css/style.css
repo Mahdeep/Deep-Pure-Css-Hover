@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.deep-btn {
+  background-color: #023047;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+/* Deep Btn Hover One*/
+
+.deep-btn-hover-one {
+}
+.deep-btn-hover-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #023047;
+  border-radius: 15px;
+  transform: rotate(10deg);
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.deep-btn-hover-one:hover::before {
+  transform: rotate(-5deg);
+}
